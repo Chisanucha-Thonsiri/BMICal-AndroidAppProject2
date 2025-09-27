@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BMI-CAL</string>
+    <string name="bmi_div">BMI Calculator</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="height">Height (cm)</string>
+    <string name="weight_et">Please enter you weight: </string>
+    <string name="height_et">Please enter you height: </string>
+    <string name="cal_btn">Calculate my BMI!</string>
+    <string name="res_div">Result</string>
+    <string name="bmi_res">BMI Result:</string>
+    <string name="bmi_res_cate">BMI Category:</string>
+</resources>

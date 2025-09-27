@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/mainDiv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/div"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/bmi_div"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/Itim"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/weight"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:fontFamily="@font/Itim"
+            />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/et_text_field"
+            android:hint="@string/weight_et"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:fontFamily="@font/Itim"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/height"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:fontFamily="@font/Itim"
+            />
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/et_text_field"
+            android:hint="@string/height_et"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:fontFamily="@font/Itim"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/cal_btn"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/cal_btn"
+            app:backgroundTint="@null"
+            android:fontFamily="@font/Itim"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resDiv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/div"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/res_div"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/Itim"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtBmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/bmi_res"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:fontFamily="@font/Itim"
+                />
+
+            <TextView
+                android:id="@+id/txtBmiRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="//แสดงผลBMI"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txtCrit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/bmi_res_cate"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:fontFamily="@font/Itim"
+                />
+
+            <TextView
+                android:id="@+id/txtCritRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="//แสดงเกณฑ์"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+</LinearLayout>

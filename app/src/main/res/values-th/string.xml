@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI-CAL</string>
+    <string name="bmi_div" >โปรแกรมคำนวนดัชนีมวลกาย</string>
+    <string name="weight">น้ำหนัก (กิโลกรัม)</string>
+    <string name="height">ส่วนสูง (เซนติเมตร)</string>
+    <string name="weight_et">กรุณากรอกน้ำหนักของคุณ: </string>
+    <string name="height_et">กรุณากรอกส่วนสูงของคุณ: </string>
+    <string name="cal_btn">คำนวน BMI ของฉัน!</string>
+    <string name="res_div">ผลลัพธ์</string>
+    <string name="bmi_res">"ผลลัพธ์ค่า BMI: "</string>
+    <string name="bmi_res_cate">"เกณฑ์ BMI: "</string>
+</resources>
